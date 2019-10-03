@@ -47,6 +47,9 @@ public class NewServlet extends HttpServlet {
                 String name = en.nextElement();
                 String[] sources = request.getParameterValues(name);
                 out.println("name: "+name+"<br/>");
+                for(int i = 0 ; i < sources.length ; i++){
+                    out.println(sources[i]+"<br/>");
+                }
             }
             out.println("</body>");
             out.println("</html>");

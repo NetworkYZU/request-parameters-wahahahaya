@@ -30,6 +30,7 @@ public class NewServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    // 後端網頁
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -42,7 +43,7 @@ public class NewServlet extends HttpServlet {
             out.println("<title>Servlet NewServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            Enumeration<String> en = request.getParameterNames();
+            Enumeration<String> en = request.getParameterNames(); // 取得所有前端資料
             while (en.hasMoreElements()){
                 String name = en.nextElement();
                 String[] sources = request.getParameterValues(name);

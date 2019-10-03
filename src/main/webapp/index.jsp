@@ -15,7 +15,8 @@
         lab4: 建立一個新的 servlet，怎麼改變 action 去對應？
         -->
         <form action="process" method="GET">
-            name: <input type="text" name="username"></input>
+            name: <input type="text" name="username"></input><br/>
+            pass: <input type="password" name="pass"/><br/>  <!-- "/" = 關閉這個label  -->
             <input type="submit"/>
         </form>
     </body>
